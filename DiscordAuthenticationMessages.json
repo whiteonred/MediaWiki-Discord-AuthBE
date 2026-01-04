@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"AI Assistant"
+		]
+	},
+	"discordauth-desc": "Ermöglicht Login und Registrierung über Discord mit Server- und Rollenprüfung.",
+	"discordauth-error-invalid-state": "Ungültiger Sitzungsstatus. Bitte versuchen Sie es erneut.",
+	"discordauth-error-token": "Fehler beim Abrufen des Discord-Tokens.",
+	"discordauth-error-userinfo": "Fehler beim Abrufen der Discord-Benutzerinformationen.",
+	"discordauth-error-not-member": "Sie sind kein Mitglied des erforderlichen Discord-Servers.",
+	"discordauth-error-no-role": "Sie haben nicht die erforderliche Rolle auf dem Discord-Server.",
+	"discordauth-error-no-account": "Es existiert kein Wiki-Konto für diesen Discord-Account und die automatische Erstellung ist deaktiviert."
+}

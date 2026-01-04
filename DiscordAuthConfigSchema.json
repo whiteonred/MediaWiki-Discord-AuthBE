@@ -1,0 +1,20 @@
+// ... existing code ...
+	"config": {
+		"DiscordClientId": {
+			"value": ""
+		},
+		"DiscordClientSecret": {
+			"value": ""
+		},
+		"DiscordGuildId": {
+			"value": ""
+		},
+		"DiscordAllowedRoles": {
+			"value": []
+		},
+		"DiscordAutoCreate": {
+			"value": true
+		}
+	},
+	"manifest_version": 2
+}

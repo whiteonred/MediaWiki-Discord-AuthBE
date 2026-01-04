@@ -1,0 +1,20 @@
+// ... existing code ...
+	"config": {
+		"DiscordClientId": {
+			"value": "1457378887909507164"
+		},
+		"DiscordClientSecret": {
+			"value": "f-pPNrYuGwrDzODye_v9mxK2onjkuYQX"
+		},
+		"DiscordGuildId": {
+			"value": "1128423712107024556"
+		},
+		"DiscordAllowedRoles": {
+			"value": [Orga, Bereichsleitung, Helfer, Neuhelfer, Kernteam]
+		},
+		"DiscordAutoCreate": {
+			"value": true
+		}
+	},
+	"manifest_version": 2
+}

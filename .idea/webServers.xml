@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3a915527-4809-408a-8075-dc7815421fc1" name="FrankenMEXX" url="http://w0190e2d.kasserver.com">
+        <fileTransfer rootFolder="/wiki.frankenmexx.de" host="w0190e2d.kasserver.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

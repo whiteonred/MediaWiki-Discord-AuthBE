@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Your Name"
+		]
+	},
+	"discordauth-desc": "{{desc|name=DiscordAuth|url=https://github.com/yourusername/mediawiki-discord-auth}}",
+	"discordauth-error-invalid-state": "Error message shown when the OAuth state parameter is invalid or missing",
+	"discordauth-error-token": "Error message shown when the OAuth token exchange fails",
+	"discordauth-error-userinfo": "Error message shown when Discord user information cannot be retrieved",
+	"discordauth-error-not-member": "Error message shown when the user is not a member of the required Discord server",
+	"discordauth-error-no-role": "Error message shown when the user does not have any of the required roles",
+	"discordauth-error-no-account": "Error message shown when no wiki account exists and auto-creation is disabled"
+}

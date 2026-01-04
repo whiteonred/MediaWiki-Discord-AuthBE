@@ -1,0 +1,103 @@
+{
+	"name": "DiscordAuth",
+	"version": "1.0.0",
+	"author": [
+		"Your Name"
+	],
+	"url": "https://github.com/yourusername/mediawiki-discord-auth",
+	"descriptionmsg": "discordauth-desc",
+	"license-name": "MIT",
+	"type": "auth",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"AutoloadNamespaces": {
+		"DiscordAuth\\": "."
+	},
+	"SpecialPages": {
+		"DiscordLogin": {
+			"class": "DiscordAuth\\SpecialDiscordLogin",
+			"services": [
+				"MainConfig",
+				"HttpRequestFactory",
+				"UserOptionsManager"
+			]
+		},
+		"LinkDiscord": {
+			"class": "DiscordAuth\\SpecialLinkDiscord",
+			"services": [
+				"MainConfig",
+				"HttpRequestFactory",
+				"UserOptionsLookup",
+				"UserOptionsManager"
+			]
+		},
+		"DiscordMembershipCheck": {
+			"class": "DiscordAuth\\SpecialDiscordMembershipCheck",
+			"services": [
+				"MainConfig",
+				"HttpRequestFactory",
+				"UserOptionsLookup",
+				"DBLoadBalancerFactory",
+				"UserGroupManager"
+			]
+		}
+	},
+	"AuthManagerAutoConfig": {
+		"primaryauth": {
+			"DiscordPrimaryAuthenticationProvider": {
+				"class": "DiscordAuth\\DiscordPrimaryAuthenticationProvider",
+				"services": [
+					"ConfigFactory",
+					"HttpRequestFactory"
+				],
+				"sort": 50
+			}
+		}
+	},
+	"config": {
+		"DiscordClientId": {
+			"value": ""
+		},
+		"DiscordClientSecret": {
+			"value": ""
+		},
+		"DiscordGuildId": {
+			"value": ""
+		},
+		"DiscordAllowedRoles": {
+			"value": []
+		},
+		"DiscordAutoCreate": {
+			"value": false
+		},
+		"DiscordAuthMode": {
+			"value": "optional",
+			"description": "Authentication mode: 'optional' (Discord + password), 'required' (Discord only), 'supplement' (password required, Discord optional)"
+		},
+		"DiscordBotToken": {
+			"value": "",
+			"description": "Discord Bot Token for admin membership checks (optional, only needed for Special:DiscordMembershipCheck)"
+		},
+		"DiscordRoleToGroupMapping": {
+			"value": {},
+			"description": "Mapping of Discord Role IDs to MediaWiki groups. Example: {\"123456789\": \"sysop\", \"987654321\": [\"bureaucrat\", \"editor\"]}"
+		},
+		"DiscordSessionTimeout": {
+			"value": 604800,
+			"description": "Session timeout in seconds for Discord-authenticated users (default: 604800 = 1 week)"
+		}
+	},
+	"MessagesDirs": {
+		"DiscordAuth": [
+			"i18n"
+		]
+	},
+	"Hooks": {
+		"AuthChangeFormFields": "DiscordAuth\\Hooks::onAuthChangeFormFields",
+		"UserGetRights": "DiscordAuth\\Hooks::onUserGetRights",
+		"GetPreferences": "DiscordAuth\\Hooks::onGetPreferences",
+		"UserLoadAfterLoadFromSession": "DiscordAuth\\Hooks::onUserLoadAfterLoadFromSession"
+	},
+	"manifest_version": 2
+}

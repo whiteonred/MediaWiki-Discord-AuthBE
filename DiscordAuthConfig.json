@@ -1,0 +1,41 @@
+{
+	"name": "DiscordAuth",
+	"version": "1.0.0",
+	"author": "AI Assistant",
+	"descriptionmsg": "discordauth-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "auth",
+	"AuthManagerAutoConfig": {
+		"PrimaryAuthenticationProviders": {
+			"DiscordAuth\\DiscordPrimaryAuthenticationProvider": {
+				"handler": "DiscordAuth\\DiscordPrimaryAuthenticationProvider",
+				"services": [
+					"ConfigFactory"
+				]
+			}
+		}
+	},
+	"MessagesDirs": {
+		"DiscordAuth": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"DiscordAuth\\": "includes/"
+	},
+	"config": {
+		"DiscordClientId": {
+			"value": ""
+		},
+		"DiscordClientSecret": {
+			"value": ""
+		},
+		"DiscordGuildId": {
+			"value": ""
+		},
+		"DiscordAllowedRoles": {
+			"value": []
+		}
+	},
+	"manifest_version": 2
+}
