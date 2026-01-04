@@ -448,10 +448,6 @@ Die Extension ist vollständig kompatibel mit PHP 8.2 und nutzt:
 - Testen Sie mit leerem `$wgDiscordAllowedRoles` Array
 - Verifizieren Sie die Rollenzuweisungen im Discord-Server
 
-## Lizenz
-
-Bitte fügen Sie hier Ihre Lizenzinformationen hinzu.
-
 ## Support
 
 Bei Problemen oder Fragen öffnen Sie bitte ein Issue im Repository.
