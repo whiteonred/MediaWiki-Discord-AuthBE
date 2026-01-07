@@ -10,6 +10,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="FrankenMEXX (project level)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/extensions/DiscordAuth" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Hetzner">
         <serverdata>
           <mappings>
